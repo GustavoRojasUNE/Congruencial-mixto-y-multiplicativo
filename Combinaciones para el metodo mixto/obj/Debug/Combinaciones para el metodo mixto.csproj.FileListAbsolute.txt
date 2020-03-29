@@ -1,0 +1,7 @@
+C:\Users\jgdlr\source\repos\Congruencial mixto y multiplicativo\Combinaciones para el metodo mixto\bin\Debug\Combinaciones para el metodo mixto.exe.config
+C:\Users\jgdlr\source\repos\Congruencial mixto y multiplicativo\Combinaciones para el metodo mixto\bin\Debug\Combinaciones para el metodo mixto.exe
+C:\Users\jgdlr\source\repos\Congruencial mixto y multiplicativo\Combinaciones para el metodo mixto\bin\Debug\Combinaciones para el metodo mixto.pdb
+C:\Users\jgdlr\source\repos\Congruencial mixto y multiplicativo\Combinaciones para el metodo mixto\obj\Debug\Combinaciones para el metodo mixto.csprojAssemblyReference.cache
+C:\Users\jgdlr\source\repos\Congruencial mixto y multiplicativo\Combinaciones para el metodo mixto\obj\Debug\Combinaciones para el metodo mixto.csproj.CoreCompileInputs.cache
+C:\Users\jgdlr\source\repos\Congruencial mixto y multiplicativo\Combinaciones para el metodo mixto\obj\Debug\Combinaciones para el metodo mixto.exe
+C:\Users\jgdlr\source\repos\Congruencial mixto y multiplicativo\Combinaciones para el metodo mixto\obj\Debug\Combinaciones para el metodo mixto.pdb
