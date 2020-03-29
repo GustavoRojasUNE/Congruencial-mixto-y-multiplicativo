@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generador congruencial mixto y multiplicativo", "Congruencial mixto y multiplicativo\Generador congruencial mixto y multiplicativo.csproj", "{821CF6F0-27D5-4F2C-9F9E-46B7CA86C13A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generador de combinaciones para el metodo mixto", "Combinaciones para el metodo mixto\Generador de combinaciones para el metodo mixto.csproj", "{9C9912C2-5557-4BC2-8E0B-EC9FF0011B4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prob1", "Prob1\Prob1.csproj", "{775F5DE1-7FDD-47CD-A505-819EDF9AB622}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonRandom", "PythonRandom\PythonRandom.pyproj", "{FCD0A203-D0F9-4BEC-8F93-765C5AFC1DE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{821CF6F0-27D5-4F2C-9F9E-46B7CA86C13A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{821CF6F0-27D5-4F2C-9F9E-46B7CA86C13A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{821CF6F0-27D5-4F2C-9F9E-46B7CA86C13A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{821CF6F0-27D5-4F2C-9F9E-46B7CA86C13A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C9912C2-5557-4BC2-8E0B-EC9FF0011B4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C9912C2-5557-4BC2-8E0B-EC9FF0011B4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C9912C2-5557-4BC2-8E0B-EC9FF0011B4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C9912C2-5557-4BC2-8E0B-EC9FF0011B4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{775F5DE1-7FDD-47CD-A505-819EDF9AB622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{775F5DE1-7FDD-47CD-A505-819EDF9AB622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{775F5DE1-7FDD-47CD-A505-819EDF9AB622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{775F5DE1-7FDD-47CD-A505-819EDF9AB622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCD0A203-D0F9-4BEC-8F93-765C5AFC1DE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCD0A203-D0F9-4BEC-8F93-765C5AFC1DE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03B4185D-7CF5-4EB7-803A-15C648EEA07B}
+	EndGlobalSection
+EndGlobal
