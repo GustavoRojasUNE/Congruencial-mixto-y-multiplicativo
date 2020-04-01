@@ -25,11 +25,13 @@ namespace Prob1
         static void Main(string[] args)
         {
             Aleatorio random = new Aleatorio();
-
-            double tiempo = 0, tiempo_max = 70000;
+            bool inspector_ocupado = false;
+            double tiempo = 0, tiempo_max = 70000, pieza_max = 0;
             Evento evento;
             Evento pieza;
             List<Evento> eventos = new List<Evento>();
+            List<Evento> salidas = new List<Evento>();
+            List<Evento> cola_de_espera = new List<Evento>();
 
             while (tiempo < tiempo_max)
             {
@@ -53,18 +55,14 @@ namespace Prob1
             }
 
             tiempo = 0;
-            List<Evento> cola_de_espera = new List<Evento>();
-            List<Evento> salidas = new List<Evento>();
-            bool inspector_ocupado = false;
-            double pieza_max = 0;
-
-            while (tiempo < tiempo_max && salidas.Where(s => s.tipo_evento == "salida_inspeccion_cliente2").Count() != 500)
+            while (tiempo < tiempo_max && salidas.Where(s => s.tipo_evento == "salida_inspeccion_cliente2").Count() < 500)
             {
                 eventos = eventos.OrderBy(e => e.tiempo_evento).ToList();
                 evento = eventos[0];
                 eventos.RemoveAt(0);
                 tiempo = evento.tiempo_evento;
                 pieza_max = pieza_max > cola_de_espera.Count ? pieza_max : cola_de_espera.Count;
+
                 if (evento.tipo_evento == "llegada_cliente1")
                 {
                     if (cola_de_espera.Count == 0 && inspector_ocupado == false)
@@ -141,19 +139,16 @@ namespace Prob1
                 }
             }
 
-            double total_clientes1 = 0;
             List<Evento> promedio_cliente1 = salidas.Where(s => s.tipo_evento == "salida_inspeccion_cliente1").ToList();
             List<Evento> promedio_cliente2 = salidas.Where(s => s.tipo_evento == "salida_inspeccion_cliente2").ToList();
 
             double prom1 = promedio_cliente1.Sum(p1 => p1.tiempo_salida - p1.tiempo_creacion) / promedio_cliente1.Count;
             double prom2 = promedio_cliente2.Sum(p2 => p2.tiempo_salida - p2.tiempo_creacion) / promedio_cliente2.Count;
 
-
-            total_clientes1 = salidas.Where(s => s.tipo_evento == "salida_inspeccion_cliente1").Count();
-
             Console.WriteLine(Math.Round(tiempo / 60, 2) + " hrs totales de simulacion");
-            Console.WriteLine(total_clientes1 + " clientes del tipo 1");
-            Console.WriteLine(Math.Round(prom1 / 60, 2) + "hrs en promedio por el tipo 1 y " + Math.Round(prom2 / 60, 2) + "hrs en promedio por el tipo 2");
+            Console.WriteLine(promedio_cliente1.Count + " clientes del tipo 1");
+            Console.WriteLine(Math.Round(prom1 / 60, 2) + "hrs en promedio por el tipo 1 y " + 
+                              Math.Round(prom2 / 60, 2) + "hrs en promedio por el tipo 2");
             Console.WriteLine(pieza_max + " es el numero maximo de clientes en el sistema");
         }
     }
