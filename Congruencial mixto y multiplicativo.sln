@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generador congruencial mixt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generador de combinaciones para el metodo mixto", "Combinaciones para el metodo mixto\Generador de combinaciones para el metodo mixto.csproj", "{9C9912C2-5557-4BC2-8E0B-EC9FF0011B4A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prob18", "Prob1\Prob18.csproj", "{775F5DE1-7FDD-47CD-A505-819EDF9AB622}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prob17", "Prob1\Prob17.csproj", "{775F5DE1-7FDD-47CD-A505-819EDF9AB622}"
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonRandom", "PythonRandom\PythonRandom.pyproj", "{FCD0A203-D0F9-4BEC-8F93-765C5AFC1DE7}"
 EndProject
